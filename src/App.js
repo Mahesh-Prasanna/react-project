@@ -7,6 +7,10 @@ import Contact from './pages/Contact';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 
+function buttonClick(){
+  console.log('Button is clicked');
+  alert('clicked');
+}
 
 function App() {
 
@@ -37,7 +41,7 @@ function App() {
         <button className='decreaseButton' onClick={decrement}>Decrease</button>
       </div>
 
-      <Button variant="primary">Primary</Button>
+      <Button onClick={buttonClick} variant="primary">Primary</Button>
 
     </>
 
