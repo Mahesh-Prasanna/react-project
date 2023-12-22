@@ -1,17 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import PartOne from './components/PartOne';
+import Home from './pages/Home';
 
 function App() {
   return (
     <div className="App">
-      <h1>This is my 1st App</h1>
-      <h2>Hi Boys</h2>
-      <PartOne></PartOne>
-      <PartOne></PartOne>
-      <PartOne></PartOne>
-      <PartOne></PartOne>
-      <PartOne></PartOne>
+     <Home></Home>
     </div>
   );
 }
