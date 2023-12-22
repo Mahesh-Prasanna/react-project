@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+
 
 function App() {
 
@@ -34,6 +36,8 @@ function App() {
         <button className='increaseButton' onClick={increment}>Increase</button>
         <button className='decreaseButton' onClick={decrement}>Decrease</button>
       </div>
+
+      <Button variant="primary">Primary</Button>
 
     </>
 
