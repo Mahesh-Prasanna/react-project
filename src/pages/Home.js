@@ -1,12 +1,15 @@
 import React from 'react'
 import TopicBox from '../components/TopicBox'
 import './Home.css'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
   return (
-    <div>
+    <div id='showCol'>
         <h1>This is my Home page</h1>
-        <TopicBox food='Kottu' price='20'>
+        <Link to={"/About"}>Go to About Page</Link>
+        <Link to={"/Contact"}>Go to Contact Page</Link>
+        {/* <TopicBox food='Kottu' price='20'>
             <span>This is the description</span>
         </TopicBox>
         <TopicBox food='Rice' price='30'>
@@ -19,7 +22,7 @@ export default function Home() {
             <h2>First</h2>
             <h2>Second</h2>
             <h2>Third</h2>
-        </div>
+        </div> */}
         
     </div>
     
