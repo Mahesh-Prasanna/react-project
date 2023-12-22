@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 
 function buttonClick(){
@@ -26,6 +26,12 @@ function App() {
     // count -=1;
     setCount(count-1);
   };
+  useEffect(() =>{
+    //what i want to do as a side effect
+    console.log(`new count is : ${count}`)
+  },[count] //dependency array
+  
+  );
 
 
 
